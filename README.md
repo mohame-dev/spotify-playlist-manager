@@ -26,17 +26,17 @@
    ```
 
 ## Screenshots
-When starting the flask app, you will be presented with the following screen.
+When starting the flask app, you will be presented with the following screen.<br>
 ![index](assets/images/index.png)
 
-Once authorized with your account, the main dashboard will become visible. From here, you can either export your playlists to a .txt file or import playlists from a .txt file.
+Once authorized with your account, the main dashboard will become visible. From here, you can either export your playlists to a .txt file or import playlists from a .txt file.<br>
 ![dashboard](assets/images/dashboard.png)
 
-You can click on the `Export Playlist` button to open a div where your playlists will be listed. Clicking on a playlist will download the contents of that playlist to a .txt file.
+You can click on the `Export Playlist` button to open a div where your playlists will be listed. Clicking on a playlist will download the contents of that playlist to a .txt file.<br>
 ![export_expanded](assets/images/export_expanded.png)
 
-This same `.txt` file can then be used to upload at a later time to recreate the exact same playlist.
+This same `.txt` file can then be used to upload at a later time to recreate the exact same playlist.<br>
 ![uploading](assets/images/uploading.png)
 
-When you click the `Upload` button, the playlist will become visible in your Spotify account!
+When you click the `Upload` button, the playlist will become visible in your Spotify account!<br>
 ![added_spotify](assets/images/added_spotify.png)
