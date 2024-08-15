@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+:root {
+    --bg: #121212;
+    --bg-light: #202020;
+    --primary: #1ed760;
+    --primary-dark: #159743;
+    --greyer: #b3b3b3;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Moderustic";
+}
+
+h1 {
+    font-weight: 600;
+    color: white;
+}
+
+a {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--bg);
+    text-decoration: none;
+    background-color: var(--primary);
+    border-radius: 15px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+a:hover {
+    background-color: var(--primary-dark);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    width: 550px;
+    height: 50%;
+}
+
+.container-main svg {
+    padding: 30px;
+}
+
+.container-main-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 5px;
+}

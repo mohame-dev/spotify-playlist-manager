@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+:root {
+    --bg: #121212;
+    --bg-light: #202020;
+    --primary: #1ed760;
+    --primary-dark: #159743;
+    --greyer: #b3b3b3;
+}
+
+* {
+    font-family: "Moderustic";
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 600;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    gap: 30px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    width: 550px;
+    height: 50%;
+}
+
+.container-export {
+    display: none;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    width: 550px;
+    height: 50%;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container-export.show {
+    display: flex;
+}
+
+.playlist-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlist-item img {
+    width: 75px;
+}
+
+.playlist-item button {
+    all: unset;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.playlist-item button:hover {
+    font-weight: 600;
+}
+
+.upload-link {
+    all: unset;
+    display: inline-block;
+    font-weight: 500;
+    color: var(--bg);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 100px;
+    text-align: center;
+}
+
+.upload-link:hover {
+    background-color: var(--greyer);
+}
+
+.container-main-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+.file-input {
+    display: none;
+}
+
+a.export,
+.file-label {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--bg);
+    text-decoration: none;
+    background-color: var(--primary);
+    border-radius: 15px;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.file-label {
+    margin: 0;
+}
+
+a.export:hover,
+.file-label:hover {
+    background-color: var(--primary-dark);
+}
+
+#file-name,
+#number-songs {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
